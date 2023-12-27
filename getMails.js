@@ -2,8 +2,9 @@ const { readFileSync } = require('fs');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
+// prints out all main and alternate e-mails from each mitglied
 
-// first "npm install -g m365"
+// first "npm install -g @pnp/cli-microsoft365"
 // than login with "m365 login"
 // than run "node getMails.js"
 

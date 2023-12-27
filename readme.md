@@ -8,6 +8,11 @@ require node.js
 
 `m365 Login`
 
-## get plenen
+## scripts
+
+- `getMails.js`
+get all emails from users in the mitglieder group
+
+## some m365 cli commands
 
 `m365 spo listitem list -u https://erfindergeist.sharepoint.com/sites/Mitglieder -t Plenen > plenen.json`
