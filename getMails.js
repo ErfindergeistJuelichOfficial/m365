@@ -17,14 +17,14 @@ async function hhh(execString) {
 
 async function main() {
   // get mitglieder group
-  const x = await hhh('m365 aad group user list -i 5d19405e-7efc-4a35-9d3a-168db046766c')
+  const x = await hhh('m365 entra group member list -i 5d19405e-7efc-4a35-9d3a-168db046766c --output json')
   if(x) {
     const mitglieder = await JSON.parse(x)
     // console.log(mitglieder)
     const mails = []
     for(const element of mitglieder) {
       
-      const y = await hhh(`m365 aad user get -i ${element.id} -p "otherMails, mail"`)
+      const y = await hhh(`m365 entra user get -i ${element.id} -p "otherMails, mail" --output json`)
       if(y) {
         const user = await JSON.parse(y)
         mails.push(user.mail)

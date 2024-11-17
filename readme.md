@@ -4,13 +4,17 @@ require node.js
 
 `npm install -g @pnp/cli-microsoft365`
 
+create app reg if not done jet
+
+`m365 setup`
+
 ## Login
 
-`m365 Login`
+`m365 login`
 
 ## scripts
 
-- `getMails.js`
+- `node getMails.js`
 get all emails from users in the mitglieder group
 
 ## some m365 cli commands
