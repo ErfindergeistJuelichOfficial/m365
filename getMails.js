@@ -29,7 +29,7 @@ async function main() {
       if (resultUser) {
         const user = await JSON.parse(resultUser);
         mails.push(user.mail);
-        user.otherMails.forEac((mail) => mails.push(mail));
+        user.otherMails.forEach((mail) => mails.push(mail));
       }
     }
 
